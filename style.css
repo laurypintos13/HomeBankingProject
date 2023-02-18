@@ -196,7 +196,10 @@ main{
     justify-content: space-around;
     margin: -150px 0;
 }
-
+.allChat img:hover{
+    transform: rotate(45deg);
+    transition: 1s;
+}
 .btnChatPantalla{
     width: 80px;
     border-radius: 50%;
