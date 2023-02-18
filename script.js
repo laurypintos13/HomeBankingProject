@@ -16,7 +16,7 @@ function SaludoHora(){
     const fecha = new Date();
     const hora = fecha.getHours();
     
-    if (hora >= 00 && hora < 12) {
+    if (hora >= 04 && hora < 12) {
         IDsaludo.innerHTML = `¡BUENOS DIAS! 👋`
     } else if(hora >= 13 && hora < 20){
         IDsaludo.innerHTML = `¡BUENAS TARDES! 👋`
@@ -46,7 +46,7 @@ inicializar();
 
 //funciones de los botones operaciones
 function Extraer(){
-    printInput.innerHTML =  ` <div class="divTransaccion">
+    printInput.innerHTML =  ` <div class="divTransaccion animate__animated animate__fadeInDown">
                                 Ingrese monto a extraer:
                                 <input type="number" id="inputExtraer"></input><br>
                                 <button id="btnInputExtraer" > Extraer</button>
@@ -98,7 +98,7 @@ function Extraer(){
     })
 }
 function Depositar(){
-    printInput.innerHTML =  `<div class="divTransaccion">
+    printInput.innerHTML =  `<div class="divTransaccion animate__animated animate__fadeInDown">
                                 Ingrese monto a depositar:
                                 <input type="number" id="inputDepositar"></input>
                                 <button id="btnInputDepositar"> Depositar</button>
@@ -135,7 +135,7 @@ function Depositar(){
     })
 }
 function Transferir(){
-    printInput.innerHTML = `<div class="divTransaccion">
+    printInput.innerHTML = `<div class="divTransaccion animate__animated animate__fadeInDown">
                                     Ingrese ALIAS:
                                     <input type="text" id="inputAlias"></input>
                                     Ingrese monto a transferir:
@@ -187,7 +187,7 @@ function Transferir(){
     })
 }
 function Recargar(){
-    printInput.innerHTML =  `<div class="divTransaccion">
+    printInput.innerHTML =  `<div class="divTransaccion animate__animated animate__fadeInDown">
                                 Ingrese número de celular:
                                 <input type="number" id="inputTel"></input>
                                 Ingrese monto a Recargar:
@@ -295,7 +295,7 @@ btnMostrarMovimientos.addEventListener("click", ()=>{
         printInput.innerHTML = `<div class="divVacio"></div>`
     }else{
         for (let Movimientos of movimiento){
-            printInput.innerHTML += `<div class="divTablaMovimientos">                            
+            printInput.innerHTML += `<div class="divTablaMovimientos animate__animated animate__fadeInDown">                            
                                         <div>
                                             <p>${Movimientos.nombre}</p>                                    
                                         </div>
@@ -384,8 +384,8 @@ CerrarSesion()
 
 //Chat de asistente virtual
 btnChat.addEventListener("click", ()=>{
-    printInput.innerHTML  = `<div class="divTransaccion">
-                                <div class="pantallaChat" id="ChatPantalla">
+    printInput.innerHTML  = `<div class="divTransaccion animate__animated animate__fadeInDown">
+                                <div class="pantallaChat animate__animated animate__fadeIn" id="ChatPantalla">
                                     <p>👋 Buenas tardes, Soy tu asistente virtual.</p><br>
                                     <p>1. ⚠️  ¿Qué es el token? </p>
                                     <p>2. 💳 Tarjeta de credito. </p>
@@ -404,7 +404,7 @@ btnChat.addEventListener("click", ()=>{
 
     resp1.addEventListener("click", ()=>{
         printInput.innerHTML  = `<div class="divTransaccion">
-                                    <div class="pantallaChat" id="ChatPantalla">
+                                    <div class="pantallaChat animate__animated animate__fadeIn" id="ChatPantalla">
                                         <p>⚠️TOKEN</p><br>
                                         <p>☑️Es un código de seguridad que te permite hacer transacciones, retiros de dinero y pagos sin necesidad de usar la tarjeta.</p>
                                         <p>☑️Para usarlo debes entrar a la app y seleccionar la opción Token.</p>
@@ -418,7 +418,7 @@ btnChat.addEventListener("click", ()=>{
         
         resp1si.addEventListener("click", ()=>{
             printInput.innerHTML  = `<div class="divTransaccion">
-                                        <div class="pantallaChat" id="ChatPantalla">
+                                        <div class="pantallaChat animate__animated animate__fadeIn" id="ChatPantalla">
                                             <p> ⚠️ Nunca compartas tus claves y Token con nadie, ni siquiera conmigo.</p><br>
                                             <p> ☝️ Con estos datos los estafadores pueden ingresar a tus cuentas bancarias, solicitar préstamos, transferir dinero, entre otras muchas operaciones.<p><br>
                                             <p> ☝️  Ante cualquier duda, comunicate con nosotros. </p><br>
@@ -432,7 +432,7 @@ btnChat.addEventListener("click", ()=>{
         })
         resp1no.addEventListener("click", ()=>{
             printInput.innerHTML  = `<div class="divTransaccion">
-                                        <div class="pantallaChat" id="ChatPantalla">
+                                        <div class="pantallaChat animate__animated animate__fadeIn" id="ChatPantalla">
                                             <p> ¡Muchas gracias por usar nuestro asistente virtual! 🙌 </p><br>
                                             <button class="btnRespuesta" id="cerrarChat">Salir</button>
                                         </div>
@@ -447,7 +447,7 @@ btnChat.addEventListener("click", ()=>{
     
     resp2.addEventListener("click", ()=>{
         printInput.innerHTML  = `<div class="divTransaccion">
-                                    <div class="pantallaChat" id="ChatPantalla">
+                                    <div class="pantallaChat animate__animated animate__fadeIn" id="ChatPantalla">
                                         <p>💳 Con una tarjeta de Crédito podés:</p><br>
                                         <p>☑️Comprar sin tener plata en la cuenta.</p>
                                         <p>☑️comprar y pagar al mes siguiente.</p>
@@ -462,7 +462,7 @@ btnChat.addEventListener("click", ()=>{
         
         resp1si.addEventListener("click", ()=>{
             printInput.innerHTML  = `<div class="divTransaccion">
-                                        <div class="pantallaChat" id="ChatPantalla">
+                                        <div class="pantallaChat animate__animated animate__fadeIn" id="ChatPantalla">
                                             <p> ¡Qué bien! 🙌 Estás a muy poco de obtener tu tarjeta💳</p><br>
                                             <p>👤 En el transcurso del día un asesor se pondrá en contacto a tu mail registrado para continuar<p><br>
                                             <p>¡Muchas gracias, que tengas lindo día! 😊</p><br>
@@ -477,7 +477,7 @@ btnChat.addEventListener("click", ()=>{
         })
         resp1no.addEventListener("click", ()=>{
             printInput.innerHTML  = `<div class="divTransaccion">
-                                        <div class="pantallaChat" id="ChatPantalla">
+                                        <div class="pantallaChat animate__animated animate__fadeIn" id="ChatPantalla">
                                             <p> ¡Muchas gracias por usar nuestro asistente virtual! 🙌 </p><br>
                                             <button class="btnRespuesta" id="cerrarChat">Salir</button>
                                         </div>
@@ -491,7 +491,7 @@ btnChat.addEventListener("click", ()=>{
 
     resp3.addEventListener("click", ()=>{
         printInput.innerHTML  = `<div class="divTransaccion">
-                                <div class="pantallaChat" id="ChatPantalla">
+                                <div class="pantallaChat animate__animated animate__fadeIn" id="ChatPantalla">
                                     <p>💲¿Qué necesitás para pedir un Préstamo Personal?</p><br>
                                     <p>☑️Ingreso mínimo mensual de $56.000.</p>
                                     <p>☑️Tener entre 18 y 80 años.</p>
@@ -505,7 +505,7 @@ btnChat.addEventListener("click", ()=>{
         
         resp1si.addEventListener("click", ()=>{
             printInput.innerHTML  = `<div class="divTransaccion">
-                                        <div class="pantallaChat" id="ChatPantalla">
+                                        <div class="pantallaChat animate__animated animate__fadeIn" id="ChatPantalla">
                                             <p>¡Qué bien! 🙌 Estás a muy poco de obtener tu préstamo 💲 <p><br>
                                             <p>👤 En el transcurso del día un asesor se pondrá en contacto a tu mail registrado para continuar<p><br>
                                             <p>¡Muchas gracias, que tengas lindo día! 😊</p><br>
@@ -520,7 +520,7 @@ btnChat.addEventListener("click", ()=>{
         })
         resp1no.addEventListener("click", ()=>{
             printInput.innerHTML  = `<div class="divTransaccion">
-                                        <div class="pantallaChat" id="ChatPantalla">
+                                        <div class="pantallaChat animate__animated animate__fadeIn" id="ChatPantalla">
                                             <p> ¡Muchas gracias por usar nuestro asistente virtual! 🙌 </p>
                                             <button class="btnRespuesta" id="cerrarChat">Salir</button>
                                         </div>
@@ -534,7 +534,7 @@ btnChat.addEventListener("click", ()=>{
 
     resp4.addEventListener("click", ()=>{
         printInput.innerHTML  = `<div class="divTransaccion">
-                                    <div class="pantallaChat" id="ChatPantalla">
+                                    <div class="pantallaChat animate__animated animate__fadeIn" id="ChatPantalla">
                                         <p>👋Para obtener mas información y poder asesorarte mejor:</p><br>
                                         <p>☑️Envíame un correo a onlineBanking@banking.com </p>
                                         <p>☑️Envíame un WhatsApp al 3510000000 </p>
@@ -554,7 +554,7 @@ btnChat.addEventListener("click", ()=>{
 //Formulario de contacto
 btnForm.addEventListener("click", ()=>{
     printInput.innerHTML = `<div >
-                                <form id="form" class="divTransaccion">
+                                <form id="form" class="divTransaccion animate__animated animate__fadeInDown ">
                                     Nombre:
                                     <input name="formNombre" class="inputForm" type="text" id="inputNombre">
                                     Email:
