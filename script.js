@@ -248,7 +248,6 @@ fetch('json/operaciones.json')
                             <img id="${operacion.id}" src="${operacion.imagen}" alt="">
                             <p>${operacion.nombre}</p>                            `
             printOperaciones.append(div)
-            console.log(div)
         })
     
     const btnidExtraer = document.getElementById("idExtraer")
