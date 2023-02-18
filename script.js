@@ -239,7 +239,7 @@ function Recargar(){
     })
 }
 //imprimir dar funcionamiento a los botones de las operaciones
-fetch('json/operaciones.json')
+fetch('operaciones.json')
     .then( (res) => res.json())
     .then( (data) => {
         data.forEach((operacion) => {
