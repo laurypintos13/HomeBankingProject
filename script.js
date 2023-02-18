@@ -596,7 +596,7 @@ btnForm.addEventListener("click", ()=>{
             const formLoad = new FormData(form);
             console.log([...formLoad]);
 
-            fetch('https://formsubmit.co/ajax/laurypintos.13@gmail.com',{
+            fetch('https://formsubmit.co/ajax/d080c4a917180afac665c50310b82a2b',{
                 method: "POST",
                 body: formLoad
             })        
