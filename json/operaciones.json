@@ -1,0 +1,22 @@
+[
+    {
+        "id": "idExtraer",
+        "nombre" : "EXTRAER",
+        "imagen" : "../media/extraer.png"   
+    },
+    {
+        "id": "idDepositar",
+        "nombre" : "DEPOSITAR",
+        "imagen" : "../media/depositar.png"
+    },
+    {
+        "id": "idTransferir",
+        "nombre" : "TRANSFERIR",
+        "imagen" : "../media/transferir.png"
+    },
+    {
+        "id": "idRecargar",
+        "nombre" : "RECARGAR",
+        "imagen" : "../media/recargar.png"
+    }
+]
