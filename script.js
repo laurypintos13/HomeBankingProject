@@ -338,7 +338,7 @@ function PublicidadEstafa(){
     })
 }
 
-let tiempoPublicidad = setTimeout(PublicidadEstafa, 30000);
+let tiempoPublicidad = setTimeout(PublicidadEstafa, 10000);
 
 //publicidad rotativa
 function PublicidadRotativa(){
